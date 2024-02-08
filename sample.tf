@@ -62,6 +62,6 @@ output "list_output"{
 }
 
 output "list"{
-    value="this output is ${var.variables}"
+    value=var.variables
 }
 
