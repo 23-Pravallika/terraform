@@ -17,6 +17,9 @@ variable "string_type" {
 
 output "vars_output"{
     value=var.Sample_vars
+}
+
+output "string_vars_output"{
     value=var.string_type
 }
 
