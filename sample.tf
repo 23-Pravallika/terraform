@@ -75,9 +75,10 @@ variable "map"{
 }
 
 output "map_output"{
-    value="string :${var.map["str"]}, num :${var.map["number"]} and boolean :${var.map["bool"]} are the examples of map type variables"
+    value="string :${var.map["str"]}, num :${var.map["number"]} , boolean :${var.map["bool"]} are the examples of map type variables"
 }
 
 output "map"{
     value=var.map
 }
+
