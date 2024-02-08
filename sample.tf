@@ -1,4 +1,4 @@
-output "terraform_output" {
-    terraform_URL= "https://developer.hashicorp.com/terraform/language/values/outputs"
+output "terraform_URL" {
+    value="https://developer.hashicorp.com/terraform/language/values/outputs"
 }
 
