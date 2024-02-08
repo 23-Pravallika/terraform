@@ -40,3 +40,28 @@ variable "string" {
 
 #Variable names must be unique within a module.
 
+variable "num"{
+    default=100
+}
+
+output "num_output"{
+    value=var.num
+}
+
+# list
+variable "variables"{
+    default=[
+        "terraform",
+        200,
+        true
+    ]
+}
+
+output "list_output"{
+    value="this output is ${var.variables[0,1,2]}"
+}
+
+output "list"{
+    value="this output is ${var.variables}"
+}
+
