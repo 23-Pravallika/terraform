@@ -82,3 +82,73 @@ output "map"{
     value=var.map
 }
 
+#Object type : 
+variable "object_type" {
+    type= object({
+    name= string
+    age= number
+    enabled=bool
+ })
+ default = {
+   name="John Doe"
+   age=30
+   enabled=true
+ }
+}
+
+output "object"{
+    value=var.object_type
+}
+
+
+#The list(object) is an ordered list of objects where each object is referred to using the index. 
+variable "list_of_objects" {
+   type=list(object({
+   name=string
+   age=number
+   bool_val=bool
+ }))
+ default = [
+    {
+        name="John Doe"
+        age=30
+        bool_val=true
+    },
+    {
+        name="mike"
+        age=20
+        bool_val=true
+    }
+    ]
+}
+
+output "obj_lst"{
+    value=var.list_of_objects
+}
+
+#Map of objects: 
+variable "map_of_objects" {
+    type = map(object({
+    name = string,
+    cidr = string
+  }))
+  default = {
+    "subnet_a" = {       # here subnet is the key 
+    name = "Subnet A",              # name and cidr are the values for the key 
+    cidr = "10.10.1.0/24"
+    },
+  "subnet_b" = {
+    name = "Subnet B",
+    cidr = "10.10.2.0/24"
+    },
+  "subnet_c" = {
+    name = "Subnet C",
+    cidr = "10.10.3.0/24"
+    }
+  }
+}
+
+output "mapOfObj"{
+    value=var.map_of_objects
+}
+
