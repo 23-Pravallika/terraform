@@ -19,9 +19,9 @@ output "vars_output"{
     value=var.Sample_vars
 }
 
-# output "string_vars_output"{
-#    value=var.string_type
-#}
+output "string_vars_output"{
+    value=var.string_type
+}
 
 variable "string_type_vars" {
  type        = string
@@ -32,7 +32,7 @@ output "vars_output"{
     value=var.Sample_vars
 }
 
-variable "string_type" {
+variable "string" {
  description = "This is a variable of type string"
  type        = string
  default     = "Default string value for this variable"
