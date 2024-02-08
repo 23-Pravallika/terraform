@@ -65,3 +65,19 @@ output "list"{
     value=var.variables
 }
 
+# map
+variable "map"{
+    default={
+        str="terraform basic",
+        number=400,
+        bool=true
+    }
+}
+
+output "map_output"{
+    value="string :${var.map["str"]}, num :${var.map["number"]} and boolean :${var.map["bool"]} are the examples of map type variables"
+}
+
+output "map"{
+    value="these are ${var.map} are the examples of map"
+}
