@@ -37,3 +37,6 @@ variable "string" {
  type        = string
  default     = "Default string value for this variable"
 }
+
+#Variable names must be unique within a module.
+
