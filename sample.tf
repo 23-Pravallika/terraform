@@ -58,7 +58,7 @@ variable "variables"{
 }
 
 output "list_output"{
-    value= "the output : ${var.variables[0]} items"
+    value= "first item is ${var.variables[0]} in the list"
 }
 
 output "list"{
