@@ -28,8 +28,8 @@ variable "string_type_vars" {
  default     = "Default string value for this variable"
 }
 
-output "vars_output"{
-    value=var.Sample_vars
+output "var_output"{
+    value=var.string_type_vars"
 }
 
 variable "string" {
