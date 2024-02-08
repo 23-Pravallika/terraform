@@ -19,9 +19,9 @@ output "vars_output"{
     value=var.Sample_vars
 }
 
-output "string_vars_output"{
-    value=var.string_type
-}
+# output "string_vars_output"{
+#    value=var.string_type
+#}
 
 variable "string_type_vars" {
  type        = string
