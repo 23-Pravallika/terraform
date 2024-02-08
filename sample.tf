@@ -5,7 +5,7 @@ output "terraform_URL"{
 # variables
 
 
-varibale "Sample_vars"{
+variable "Sample_vars"{
     default="This is demo on vars"
 }
 
