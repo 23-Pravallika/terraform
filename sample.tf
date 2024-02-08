@@ -24,19 +24,13 @@ output "string_vars_output"{
     value=var.string_type
 }
 
-variable "string_type_vars" {
+variable "string_type_vars" {      # without description 
  type        = string
  default     = "Default string value for this variable"
 }
 
 output "var_output"{
     value=var.string_type_vars
-}
-
-variable "string" {
- description = "This is a variable of type string"
- type        = string
- default     = "Default string value for this variable"
 }
 
 #Variable names must be unique within a module.
@@ -58,11 +52,11 @@ variable "variables"{
     ]
 }
 
-output "list_output"{
+output "list_output"{                                       # its an example to give the output of particular the nth item in the list
     value= "first item is ${var.variables[0]} in the list"
 }
 
-output "list"{
+output "list"{                # it prints the whole list 
     value=var.variables
 }
 
