@@ -3,6 +3,7 @@ output "terraform_URL"{
 }
 
 # variables
+# A variable can be accessed without ${} as well, if it's not accompanied in any sentence. If you just want to use it, you can directly refer it as `var.VariableName`
 
 
 variable "Sample_vars"{
