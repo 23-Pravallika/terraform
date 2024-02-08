@@ -58,7 +58,7 @@ variable "variables"{
 }
 
 output "list_output"{
-    value= "the output : ${var.variables[0,1,2]} all the items"
+    value= "the output : ${var.variables[0]} items"
 }
 
 output "list"{
