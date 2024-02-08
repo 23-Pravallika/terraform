@@ -29,7 +29,7 @@ variable "string_type_vars" {
 }
 
 output "var_output"{
-    value=var.string_type_vars"
+    value=var.string_type_vars
 }
 
 variable "string" {
