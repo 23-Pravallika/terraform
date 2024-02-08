@@ -147,3 +147,10 @@ output "mapOfObj"{
     value=var.map_of_objects
 }
 
+variable "empty_var"{}
+
+output "empty_output"{
+    value=var.empty_var
+}
+
+
