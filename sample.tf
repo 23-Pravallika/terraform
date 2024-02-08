@@ -79,5 +79,5 @@ output "map_output"{
 }
 
 output "map"{
-    value="these are ${var.map} are the examples of map"
+    value=var.map
 }
