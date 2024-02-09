@@ -163,7 +163,7 @@ variable "numb"{
     default=100
 }
 
-output "state_name_op" {
+output "number_op" {
     value = "Number is ${var.numb}"
 }
 
