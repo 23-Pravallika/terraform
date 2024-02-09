@@ -150,13 +150,13 @@ variable "map_of_objects" {
 # Declaring an empty variable
 variable "empty_var"{}
 
-output "empty_output"{
-    value=var.empty_var
-}
+# output "empty_output"{
+#     value=var.empty_var
+# }
 
-output "empty_var_output" {
-    value = "value is ${var.empty_var}"
-}
+# output "empty_var_output" {
+#     value = "value is ${var.empty_var}"
+# }
 
 # variable "numb" {}
 variable "numb"{
