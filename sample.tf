@@ -168,9 +168,8 @@ output "number_op" {
 }
 
 # This variable value will be supplied from the command line
-variable "providername" {}
+variable "Country" {}
 
-output "provider_name_op" {
-    value = "Name of the provider is ${var.providername}"
+output "country_name" {
+    value = "Name of the country is ${var.Country}"
 }
-
