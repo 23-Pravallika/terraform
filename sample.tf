@@ -16,22 +16,22 @@ variable "string_type" {
  default     = "Default string value for this variable"
 }
 
-output "vars_output"{
-    value=var.Sample_vars
-}
+# output "vars_output"{
+#     value=var.Sample_vars
+# }
 
-output "string_vars_output"{
-    value=var.string_type
-}
+# output "string_vars_output"{
+#     value=var.string_type
+# }
 
 variable "string_type_vars" {      # without description 
  type        = string
  default     = "Default string value for this variable"
 }
 
-output "var_output"{
-    value=var.string_type_vars
-}
+# output "var_output"{
+#     value=var.string_type_vars
+# }
 
 #Variable names must be unique within a module.
 
@@ -39,9 +39,9 @@ variable "num"{
     default=100
 }
 
-output "num_output"{
-    value=var.num
-}
+# output "num_output"{
+#     value=var.num
+# }
 
 # list
 variable "variables"{
@@ -52,13 +52,13 @@ variable "variables"{
     ]
 }
 
-output "list_output"{                                       # its an example to give the output of particular the nth item in the list
-    value= "first item is ${var.variables[0]} in the list"
-}
+# output "list_output"{                                       # its an example to give the output of particular the nth item in the list
+#     value= "first item is ${var.variables[0]} in the list"
+# }
 
-output "list"{                # it prints the whole list 
-    value=var.variables
-}
+# output "list"{                # it prints the whole list 
+#     value=var.variables
+# }
 
 # map
 variable "map"{
@@ -69,13 +69,13 @@ variable "map"{
     }
 }
 
-output "map_output"{
-    value="string :${var.map["str"]}, num :${var.map["number"]} , boolean :${var.map["bool"]} are the examples of map type variables"
-}
+# output "map_output"{
+#     value="string :${var.map["str"]}, num :${var.map["number"]} , boolean :${var.map["bool"]} are the examples of map type variables"
+# }
 
-output "map"{
-    value=var.map
-}
+# output "map"{
+#     value=var.map
+# }
 
 #Object type : 
 variable "object_type" {
@@ -91,9 +91,9 @@ variable "object_type" {
  }
 }
 
-output "object"{
-    value=var.object_type
-}
+# output "object"{
+#     value=var.object_type
+# }
 
 
 #The list(object) is an ordered list of objects where each object is referred to using the index. 
@@ -117,9 +117,9 @@ variable "list_of_objects" {
     ]
 }
 
-output "obj_lst"{
-    value=var.list_of_objects
-}
+# output "obj_lst"{
+#     value=var.list_of_objects
+# }
 
 #Map of objects: 
 variable "map_of_objects" {
@@ -143,14 +143,27 @@ variable "map_of_objects" {
   }
 }
 
-output "mapOfObj"{
-    value=var.map_of_objects
-}
+# output "mapOfObj"{
+#     value=var.map_of_objects
+# }
 
+# Declaring an empty variable
 variable "empty_var"{}
 
 output "empty_output"{
     value=var.empty_var
 }
 
+output "empty_var_output" {
+    value = "value is ${var.empty_var}"
+}
+
+# variable "numb" {}
+variable "numb"{
+    default=100
+}
+
+output "state_name_op" {
+    value = "Number is ${var.numb}"
+}
 
