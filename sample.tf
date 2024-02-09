@@ -167,3 +167,10 @@ output "number_op" {
     value = "Number is ${var.numb}"
 }
 
+# This variable value will be supplied from the command line
+variable "provider" {}
+
+output "provider_name" {
+    value = "Name of the provider is ${var.provider}"
+}
+
