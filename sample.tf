@@ -173,3 +173,4 @@ variable "Country" {}
 output "country_name" {
     value = "Name of the country is ${var.Country}"
 }
+
