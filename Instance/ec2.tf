@@ -13,7 +13,4 @@ output "ip"{
     value=aws_instance.web.private_ip
 }
 
-output "sg"{
-    value=aws_instance.web.vpc_security_group_ids
-}
 

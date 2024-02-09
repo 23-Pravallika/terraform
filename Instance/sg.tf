@@ -1,6 +1,7 @@
-resource "aws_security_group" "allow-all-sg" {
- name        = "allow-all-sg"
- description = "allow all"
+resource "aws_security_group" "allow-all-ssh" {
+ ## Creates Security Group 
+ name        = "allow-all-ssh"
+ description = "allow ssh"
  
 ingress {
    description = "SSH"
@@ -18,7 +19,7 @@ egress {
  }
 
 tags = {
-    Name = "allow-all-sg"
+    Name = "allow-all-ssh"
   }
 }
 
