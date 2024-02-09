@@ -2,7 +2,7 @@ resource "aws_instance" "web" {
   ami           = "ami-029c63fec721135c4"
   instance_type = "t2.micro"
   vpc_security_group_ids = [aws_security_group.allow-all-sg.id]
-
+  
   tags = {
     Name = "terraform-server"
   }
@@ -14,6 +14,6 @@ output "ip"{
 }
 
 output "sg"{
-    value=aws_instance.web.security_groups
+    value=aws_instance.web.vpc_security_group_ids
 }
 
