@@ -148,7 +148,7 @@ variable "map_of_objects" {
 # }
 
 # Declaring an empty variable
-variable "empty_var"{}
+#variable "empty_var"{}
 
 # output "empty_output"{
 #     value=var.empty_var
