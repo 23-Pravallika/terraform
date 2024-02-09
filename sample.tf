@@ -168,9 +168,9 @@ output "number_op" {
 }
 
 # This variable value will be supplied from the command line
-variable "provider_name" {}
+variable "providername" {}
 
 output "provider_name_op" {
-    value = "Name of the provider is ${var.provider_name}"
+    value = "Name of the provider is ${var.providername}"
 }
 
