@@ -1,6 +1,6 @@
-output "terraform_URL"{
-    value="https://developer.hashicorp.com/terraform/language/values/outputs"
-}
+# output "terraform_URL"{
+#     value="https://developer.hashicorp.com/terraform/language/values/outputs"
+# }
 
 # variables
 # A variable can be accessed without ${} as well, if it's not accompanied in any sentence. If you just want to use it, you can directly refer it as `var.VariableName`
