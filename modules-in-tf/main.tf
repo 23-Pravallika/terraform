@@ -8,3 +8,7 @@ module "sg_module" {
 
 }
 
+# Printing the output from ec2 module
+output "ip"{
+    value=aws_instance.web.private_ip
+}
