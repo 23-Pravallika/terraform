@@ -15,3 +15,4 @@ data "aws_ami" "ami-created-using-tf" {
   name_regex       = "Lab-ansible-ami"
   owners           = ["self"]
 }
+

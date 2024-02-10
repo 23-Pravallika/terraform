@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  ami           = "ami-029c63fec721135c4"
+  ami           = data.aws_ami.ami-created-using-tf
   instance_type = "t2.micro"
   vpc_security_group_ids = [var.sg]
 
