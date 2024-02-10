@@ -27,3 +27,7 @@ tags = {
 output "sg_id"{
     value=aws_security_group.allow-all-ssh.id
 }
+
+output "sg_desc"{
+    value=aws_security_group.allow-all-ssh.description
+}
