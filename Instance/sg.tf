@@ -1,5 +1,5 @@
+# ## Creates Security Group 
 # resource "aws_security_group" "allow-all-ssh" {
-#  ## Creates Security Group 
 #  name        = "allow-all-ssh"
 #  description = "allow ssh"
  
@@ -21,6 +21,6 @@
 # tags = {
 #     Name = "allow-all-ssh"
 #   }
-#}
+# }
 
 
