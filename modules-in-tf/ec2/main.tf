@@ -7,6 +7,11 @@ resource "aws_instance" "web" {
     Name = "terraform-module"
   }
   
+  # Declaring the local provisioner inside the resource
+  provisioner "local-exec" {
+    command = "echo ${self.private_ip}"
+  }
+  
 # Declaring the remote provisioner inside the resource
  provisioner "remote-exec" {
        connection {
@@ -18,10 +23,6 @@ resource "aws_instance" "web" {
     inline = [
       "ansible-pull -U https://github.com/23-Pravallika/Ansible.git robo-pull.yml -e ENV=dev -e COMPONENT=mongodb"
     ]
-  }
-# Declaring the remote provisioner inside the resource
-  provisioner "local-exec" {
-    command = "echo ${self.private_ip}"
   }
 }
 
